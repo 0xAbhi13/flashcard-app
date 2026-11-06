@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flashcard Learning App</title>
+  <meta name="description" content="Interactive flashcard learning app with 3D flip, navigation, shuffle, restart, and progress tracking." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">FC</span>
+      <div>
+        <h1>Flashcard Learning App</h1>
+        <p class="subtitle">Flip, learn, and track your progress — one card at a time.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="app-main">
+    <section class="card-section" aria-label="Flashcard">
+      <div class="card-scene">
+        <div class="flashcard" id="flashcard" role="button" tabindex="0"
+             aria-label="Flashcard. Click or press Space to flip.">
+          <div class="card-face card-front">
+            <span class="card-badge" id="categoryFront">General</span>
+            <p class="card-label">Question</p>
+            <h2 class="card-text" id="questionText">Question</h2>
+            <p class="card-hint">Click or press Space to reveal the answer</p>
+          </div>
+          <div class="card-face card-back">
+            <span class="card-badge" id="categoryBack">General</span>
+            <p class="card-label">Answer</p>
+            <p class="card-text" id="answerText">Answer</p>
+            <p class="card-hint">Click to flip back</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="nav-controls">
+        <button id="prevBtn" class="btn btn-secondary" type="button" aria-label="Previous card">Previous</button>
+        <button id="nextBtn" class="btn btn-primary" type="button" aria-label="Next card">Next</button>
+      </div>
+
+      <div class="progress-block">
+        <div class="progress-meta">
+          <span id="counterText">Card 1 of 15</span>
+          <span id="percentText">7%</span>
+        </div>
+        <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="7" aria-label="Learning progress">
+          <div class="progress-bar" id="progressBar"></div>
+        </div>
+      </div>
+
+      <div class="extra-controls">
+        <button id="shuffleBtn" class="btn btn-ghost" type="button">Shuffle Deck</button>
+        <button id="restartBtn" class="btn btn-ghost" type="button">Restart</button>
+      </div>
+
+      <p class="completion-msg" id="completionMsg" hidden aria-live="polite">
+        🎉 You've reached the last card — great job! Keep reviewing to lock it in.
+      </p>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <p>Veda Technology Internship — Day 28: Flashcard App (Static Deck) — HTML5 · CSS3 · Vanilla JavaScript</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
