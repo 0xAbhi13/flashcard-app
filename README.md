@@ -16,9 +16,6 @@
 
 ---
 
-Flashcard Learning App by **Abhishek Jadhav** — Web Developer and first-year BCA student at VIIT, Baramati. Built with **HTML5 + CSS3 + Vanilla JavaScript**: an interactive flashcard app with a 3D flip animation, Previous/Next navigation, shuffle, restart, keyboard controls, and a dynamic progress indicator. 15 static programming and web-development flashcards. No frameworks, no build step, no backend.
-
-> **Internship attribution:** 45-day Web Development Internship at **Veda Technology** — Day 28: Flashcard App (Static Deck).
 
 ## Features
 
@@ -102,27 +99,6 @@ node --check script.js
 | Spacebar | Flip the card |
 | Left Arrow | Previous card |
 | Right Arrow | Next card |
-
-## Testing Checklist
-
-- [x] At least 15 flashcards available.
-- [x] Questions and answers display correctly.
-- [x] 3D flip animation works smoothly in both directions.
-- [x] Previous and Next buttons work correctly.
-- [x] Navigation boundaries are handled (disabled at ends).
-- [x] Progress bar and percentage update correctly.
-- [x] Current card number is accurate.
-- [x] Shuffle changes card order.
-- [x] Restart restores the original order.
-- [x] Keyboard shortcuts work.
-- [x] Layout works on mobile and desktop.
-- [x] No JavaScript console errors.
-
-## Limitations
-
-- Static deck only: questions and answers are hard-coded, not fetched from a server.
-- Progress is not persisted across page reloads.
-- No spaced-repetition or scoring; learning is self-paced.
 
 ---
 
